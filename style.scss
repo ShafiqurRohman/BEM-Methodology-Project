@@ -1,0 +1,253 @@
+/* Import Google font - Poppins */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+
+.sidebar {
+    position: fixed;
+    height: 100%;
+    width: 260px;
+    background: #11101d;
+    padding: 15px;
+    z-index: 99;
+
+    &__text{
+        font-size: 50x;
+        padding: 0 5px;
+        color: white;
+    }
+
+    &__content{
+        position: relative;
+        height: 100%;
+        width: 100%;
+        margin-top: 40px;
+
+        &__items{
+            height: 100%;
+            width: 100%;
+            list-style: none;
+            transition: all 0.4s ease;
+
+            &__item{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                text-decoration: none;
+                cursor: pointer;
+                
+                &:hover{
+                    background: rgba(255, 255, 255, 0.1);
+                    border-radius: 10px;
+                }
+                a{
+                    padding: 16px;
+                    display: inline-block;
+                    width: 100%;
+                    border-radius: 12px;
+                    color: white;
+                    text-decoration: none;
+                }
+            }
+    
+        }
+    }
+}
+
+
+
+
+
+
+.navbar,
+.main,
+.footer-container  {
+  left: 0;
+  width: 100%;
+  transition: all 0.5s ease;
+  z-index: 9999;
+}
+
+.sidebar {
+    &.close {
+    ~ .navbar,
+    ~ .main,
+    ~ .footer-container {
+        left: 260px;
+        width: calc(100% - 260px);
+        transition: all 0.5s ease;
+      }   
+    }
+}
+
+.navbar {
+  position: fixed;
+  color: #fff;
+  padding: 5px;
+  font-size: 20px;
+  background: rgb(4, 35, 71);
+  cursor: pointer;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+
+  &#sidebar-close{
+    cursor: pointer;
+  }
+  
+  &__spacer{
+    padding: 10px;
+  }
+  
+  img{
+    height: 55px;
+    width: 55px;
+    border-radius: 50%;
+  }
+}
+
+  
+.main {
+  position: relative;
+  background-color: #f2f2f2;
+  border:1px solid #ddd;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  height: auto;
+  z-index: 100;
+  background: #e7f2fd;
+  padding: 100px;
+  &__single {
+    flex-basis: 30%;
+    background-color: #737785;
+    color: white;
+    padding: 20px;
+  }
+  &__pic{
+    height: 200px;
+    width: 300px;
+  }
+  &__title{
+    text-transform: capitalize;
+    font-size: 20px;
+  }
+  &__text{
+    margin: 20px 0;
+    line-height:24px;
+  }
+ 
+}
+
+
+.btn{
+  display: inline-block;
+    background-color: rgb(4, 35, 71); // default button
+    padding: 10px 20px;
+    text-transform: capitalize;
+    color: white;
+    text-decoration: none;
+    transition: 0.3;
+    
+    &--red{
+      background-color: red; // if I want to red button
+    }
+
+    &--blue{
+      background-color: blue; // if I want to blue button
+    }
+
+    &:hover{
+      background-color: #01040f;
+    }
+}
+
+
+
+// for footer
+
+.footer-container{
+  display: flex;
+  flex-direction: column;
+  background-color: #10204e;
+  position: relative;
+  bottom: 0;
+  z-index: 100;
+}
+
+.footer {
+  font-size: 16px;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  &__left {
+    display: flex;
+    justify-content:center;
+    flex-direction: wrap;
+    align-items: center;
+    flex-basis: 30%;
+    padding:20px 0px 0px 20px;
+ 
+
+    &__logo{
+      height: 70px;
+      width: 100px;
+      
+      }
+    &__title{
+        font-size: 30px;
+        color: white;
+        text-transform: capitalize;
+        padding-left: 20px;
+      }
+  }
+
+  &__mid{
+    display: flex;
+    justify-content:space-around;
+    flex-direction: row;
+    flex-basis: 40%;
+    padding: 20px;
+    color: white;
+    &__left{
+      padding: 20px;
+      display: flex;
+      justify-content:space-between;
+      flex-direction: column;
+    }
+    &__right{
+      padding: 20px;
+      display: flex;
+      justify-content:space-between;
+      flex-direction: column;
+    }
+  }
+
+  &__right{
+    display: flex;
+    justify-content:space-around;
+    flex-direction: column;
+    flex-basis: 30%;
+    padding: 40px;
+
+    
+    &__desc{
+      color: white;
+      text-transform: capitalize;
+      text-decoration: none;
+    }
+  }
+}
+
+.copy-write{
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+}
