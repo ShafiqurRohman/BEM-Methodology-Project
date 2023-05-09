@@ -179,6 +179,7 @@
   color: white;
   text-decoration: none;
   transition: 0.3;
+  cursor: pointer;
 }
 .btn--red {
   background-color: red;
@@ -201,6 +202,7 @@
   text-align: center;
   margin: 20px;
   padding: 5px;
+  cursor: pointer;
 }
 .btn--blue {
   background-color: #346EF1;
@@ -218,6 +220,7 @@
   text-align: center;
   margin: 20px;
   padding: 5px;
+  cursor: pointer;
 }
 
 .footer-container {

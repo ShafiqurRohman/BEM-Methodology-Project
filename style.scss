@@ -194,13 +194,14 @@
 
 
 .btn{
-  display: inline-block;
+    display: inline-block;
     background-color: rgb(4, 35, 71); // default button
     padding: 10px 20px;
     text-transform: capitalize;
     color: white;
     text-decoration: none;
     transition: 0.3;
+    cursor: pointer;
     
     &--red{
       background-color: red; // if I want to red button
@@ -223,6 +224,7 @@
       text-align: center;
       margin: 20px;
       padding: 5px;
+      cursor: pointer;
     }
     &--blue{
       background-color: #346EF1;
@@ -240,6 +242,7 @@
       text-align: center;
       margin: 20px;
       padding: 5px;
+      cursor: pointer;
     }
 }
 
