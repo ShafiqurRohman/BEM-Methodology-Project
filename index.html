@@ -7,56 +7,65 @@
     <title>Demo Project</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Foldit:wght@300&display=swap" rel="stylesheet">
   </head>
   <body>
-    
-    <nav class="sidebar">
-      <span class="sidebar__text"> SCSS Project </span>
-      <div class="sidebar__content">
-        <ul class="sidebar__content__items">
-          <li class="sidebar__content__items__item">
-            <a href="#">Left side demo - 1</a>
-          </li>
-          <li class="sidebar__content__items__item">
-            <a href="#">Left side demo - 2</a>
-          </li>
-        </ul>
-      </div>
-    </nav>
+  
 
     <nav class="navbar">
-  
-      <span class="material-symbols-outlined navbar__spacer">menu</span>
+
       <img class="navbar__spacer" img src="demo.jpg"alt="">
-      <span class="navbar__spacer">Home</span>
-      <span class="navbar__spacer">Features</span>
-      <span class="navbar__spacer">Pricing</span>
-      <sapn class="navbar__spacer">Service</sapn>
+      <span class="navbar--spacer">Home</span>
+      <span class="navbar--spacer">Features</span>
+      <span class="navbar--spacer">Pricing</span>
+      <sapn class="navbar--spacer">Service</sapn>
+      <input  class="search" type="text">
     </nav>
 
 
     <main class="main">
-
-      <div class="main__single">
-        <img class="main__pic" src="demo.jpg" alt="pic">
-        <h2 class="main__title">Simple div 1</h2>
-        <p class="main__text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aspernatur nihil, pariatur assumenda corporis facilis accusantium blanditiis quibusdam recusandae praesentium neque, ad adipisci sed excepturi dolorum alias! Ab tempore hic ipsa.</p>
-        <a class="btn" href="">Read More</a>
+    
+      <div class="main__top">
+          <div class="main__top__left">
+            <div class="main__top__left--big">Everything you ever<span class="main__top__left--red"> wanted to know </span>about your website...</div>
+            <div class="main__top__left--medium">...but your analytics never told you.</div>
+            <div class="main__top__left--normal">Numbers tell you what’s happening. Hotjar’s visual insights tell you why. So you can make the changes that matter.</div>
+            <div class="main__top__left__btn">
+              <span class="btn--white">Start free with email</span> 
+              <span class="btn--blue">Start free with Google</span>
+            </div>
+           
+          </div>
+          <div class="main__top__right">
+            <img src="weekend.jpg" alt="">
+          </div>
+      </div>
+      <div class="main__down">
+        <div class="main__down__single">
+          <img class="main__down__pic" src="demo.jpg" alt="pic">
+          <h2 class="main__down__title">Simple div 1</h2>
+          <p class="main__down__text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aspernatur nihil, pariatur assumenda corporis facilis accusantium blanditiis quibusdam recusandae praesentium neque, ad adipisci sed excepturi dolorum alias! Ab tempore hic ipsa.</p>
+          <a class="btn" href="">Read More</a>
+        </div>
+  
+        <div class="main__down__single">
+          <img class="main__down__pic" src="demo.jpg" alt="pic">
+          <h2 class="main__down__title">Simple div 2</h2>
+          <p class="main__down__text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aspernatur nihil, pariatur assumenda corporis facilis accusantium blanditiis quibusdam recusandae praesentium neque, ad adipisci sed excepturi dolorum alias! Ab tempore hic ipsa.</p>
+          <a class="btn" href="">Read More</a>
+        </div>
+  
+        <div class="main__down__single">
+          <img class="main__down__pic" src="demo.jpg" alt="pic">
+          <h2 class="main__down__title">Simple div 3</h2>
+          <p class="main__down__text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aspernatur nihil, pariatur assumenda corporis facilis accusantium blanditiis quibusdam recusandae praesentium neque, ad adipisci sed excepturi dolorum alias! Ab tempore hic ipsa.</p>
+          <a class="btn" href="">Read More</a>
+        </div>
       </div>
 
-      <div class="main__single">
-        <img class="main__pic" src="demo.jpg" alt="pic">
-        <h2 class="main__title">Simple div 2</h2>
-        <p class="main__text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aspernatur nihil, pariatur assumenda corporis facilis accusantium blanditiis quibusdam recusandae praesentium neque, ad adipisci sed excepturi dolorum alias! Ab tempore hic ipsa.</p>
-        <a class="btn" href="">Read More</a>
-      </div>
-
-      <div class="main__single">
-        <img class="main__pic" src="demo.jpg" alt="pic">
-        <h2 class="main__title">Simple div 3</h2>
-        <p class="main__text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aspernatur nihil, pariatur assumenda corporis facilis accusantium blanditiis quibusdam recusandae praesentium neque, ad adipisci sed excepturi dolorum alias! Ab tempore hic ipsa.</p>
-        <a class="btn" href="">Read More</a>
-      </div>
+      
 
     </main>
 
@@ -70,29 +79,37 @@
 
       <div class="footer__mid">
         <div class="footer__mid__left">
-          <a class="footer__right__desc" href="#">Home</a>
-          <a class="footer__right__desc" href="#">Blog</a>
-          <a class="footer__right__desc" href="#">Pricing</a>
-          <a class="footer__right__desc" href="#">About</a>
+          <a class="footer__right__desc" href="#"><Address>Dhanmonddi, Dhaka</Address></a>
+          <a class="footer__right__desc" href="#">Phone: 01832908662</a>
+          <a class="footer__right__desc" href="#">whatsApp +880183290</a>
+          <a class="footer__right__desc" href="#">Connect with Us</a>
         </div>
         <div class="footer__mid__right">
-          <a class="footer__right__desc" href="#">Home</a>
-          <a class="footer__right__desc" href="#">Blog</a>
-          <a class="footer__right__desc" href="#">Pricing</a>
-          <a class="footer__right__desc" href="#">About</a>
+          <a class="footer__right__desc" href="#"><strong>Offer</strong></a>
+          <a class="footer__right__desc" href="#">Eid Offer</a>
+          <a class="footer__right__desc" href="#">New Year Offer</a>
+          <a class="footer__right__desc" href="#">New Arrival</a>
         </div>
       </div>
       <div class="footer__right">
         <a class="footer__right__desc" href="#">Home</a>
         <a class="footer__right__desc" href="#">Blog</a>
         <a class="footer__right__desc" href="#">Pricing</a>
-        <a class="footer__right__desc" href="#">Faq</a>
+        <a class="footer__right__desc" href="#">About Us</a>
       </div>
     </div>
       <hr>
 
       <div class="copy-write">
-        <p>Copyright &copy; 2023</p>
+        <div class="copy-write__up">
+          <img class="copy-write__up--hover"  src="https://img.icons8.com/ios/40/null/facebook--v1.png"/>
+          <img class="copy-write__up--hover"  src="https://img.icons8.com/ios/40/null/twitter--v1.png"/>
+          <img class="copy-write__up--hover"  src="https://img.icons8.com/ios/40/null/youtube-play--v1.png"/>
+          <img class="copy-write__up--hover"  src="https://img.icons8.com/ios/40/null/linkedin.png"/>
+        </div>
+        <div class="copy-write__down">
+          <p>Copyright &copy; 2023</p>
+        </div>
       </div>
     </footer>
     
